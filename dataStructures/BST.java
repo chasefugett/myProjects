@@ -26,7 +26,6 @@ public class BST<K extends Comparable<K>, V> extends Dictionary<K, V> {
 	 * @return -1: k1 smaller; 0: elements equal; 1: k2 smaller
 	 */
 	private int compareKeys(K k1, K k2) {
-		numOps++;
 		return k1.compareTo(k2);
 	}
 
