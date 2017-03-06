@@ -75,7 +75,7 @@ public class Battleship extends JFrame {
 	private void createPlayerBoardPanel() {
 		JPanel panel = new JPanel();
 		playerBoard = new GameBoard();
-		panel.add(playerBoard.creatGameBoard());
+		panel.add(playerBoard.createGameBoard());
 		add(panel, BorderLayout.CENTER);
 	}
 	
@@ -86,7 +86,7 @@ public class Battleship extends JFrame {
 	private void createAIBoardPanel() {
 		JPanel panel = new JPanel();
 		aiBoard = new GameBoard();
-		panel.add(aiBoard.creatGameBoard());
+		panel.add(aiBoard.createGameBoard());
 		add(panel, BorderLayout.WEST);
 	}
 	
@@ -133,6 +133,13 @@ public class Battleship extends JFrame {
 		newGame.addActionListener(listener);
 		panel.add(newGame);
 		add(panel, BorderLayout.EAST);
+	}
+	
+	class SubmitListener implements ActionListener {
+		
+		public void actionPerformed(ActionEvent e) {
+			
+		}
 	}
 	
 	
